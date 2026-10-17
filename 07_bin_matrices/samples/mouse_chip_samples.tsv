@@ -1,0 +1,41 @@
+# Mouse BAM files for the bin count matrices (build_chip_matrix.sh).
+# Tab-separated: label <TAB> bam. Lines starting with # are ignored.
+# Labels become column names (same names as the 10 kb matrix); the figure scripts use them.
+# BAM names below are from the original multicov command - add the Saga path
+# (or run build_chip_matrix.sh with -d <bam_dir>).
+label	bam
+p10A_H3K4me1_rep1	p10A-m1-300-13_S5_MarkDup.bam
+p10B_H3K4me1_rep2	5-p10B-m1-243_S5_MarkDup.bam
+3-NSNf-m1-50_S23	3-NSNf-m1-50_S23_R1_001_dedup.bam
+NSNB_m1-50-40	NSNB_m1-50-40_Mus_musculus_MarkDup.bam
+2-SNc-m1-100_S5	2-SNc-m1-100_S5_R1_001_dedup.bam
+3-SN-m1-90_S3	3-SN-m1-90_S3_MarkDup.bam
+# 9-SNZP-m1-90_S15 = SN rep2 in Fig. 3c (with 3-SN-m1-90_S3)
+9-SNZP-m1-90_S15	9-SNZP-m1-90_S15_R1_001_dedup.bam
+1-MII-B-m1-280_S1	1-MII-B-m1-280_S1_MarkDup.bam
+2-MII-C-m1-280_S2	2-MII-C-m1-280_S2_MarkDup.bam
+p10d-27m-200_S13	23-p10d-27m-200_S13_R1_001_dedup.bam
+9-mp5-K4m1-110_S9	9-mp5-K4m1-110_S9_MarkDup.bam
+MII_H3K4me3_rep1_GSM1871960	GSM1871960_H3K4me3_oocytes.rep1_Mus_musculus_MarkDup.bam
+MII_H3K4me3_rep2_GSM1871961	GSM1871961_H3K4me3_oocytes.rep2_Mus_musculus_MarkDup.bam
+P12_H3K4me3_rep1_GSM2108958	GSM2108958_H3K4me3_P12.rep1_Mus_musculus_MarkDup.bam
+P12_H3K4me3_rep2_GSM2108959	GSM2108959_H3K4me3_P12.rep2_Mus_musculus_MarkDup.bam
+MII_H3K27me3_rep1_GSM2082667	GSM2082667_MII_Oocyte_H3K27me3_rep2_Mus_musculus_MarkDup.bam
+MII_H3K27me3_rep2_GSM2082668	GSM2082668_MII_Oocyte_H3K27me3_rep3_Mus_musculus_MarkDup.bam
+P10_H3K36me3_rep1_GSM3084618	SRR6956516_GSM3084618_ChIP_GO_P10_H3K36me3_rep1_Mus_musculus_ChIP-Seq_R1_001_dedup.bam
+P10_H3K36me3_rep2_GSM3084619	SRR6956517_GSM3084619_ChIP_GO_P10_H3K36me3_rep2_Mus_musculus_ChIP-Seq_R1_001_dedup.bam
+MII_H3K36me3_rep1_GSM3084624	SRR6956522_GSM3084624_ChIP_MII_H3K36me3_rep1_Mus_musculus_ChIP-Seq_R1_001_dedup.bam
+MII_H3K36me3_rep2_GSM3084625	SRR6956523_GSM3084625_ChIP_MII_H3K36me3_rep2_Mus_musculus_ChIP-Seq_R1_001_dedup.bam
+# --- RNA-seq (Fig. 2f); BAMs in the RNA folder next to CHIP (-d points to CHIP) ---
+P10_RNA_GSM1845292	../RNA/SRR2147253_GSM1845292_sorted.bam
+P14_RNA_GSM1845293	../RNA/SRR2147254_GSM1845293_sorted.bam
+FGO_RNA_GSM1845294	../RNA/SRR2147254_GSM1845294_sorted.bam
+# --- Fig. 2f, still to collect: remove '# ' and fill in the BAM name (keep the label;
+#     Fig2f_kmeans_K36me3_K4me1_RNA.R uses it). BL6 P10 H3K4me1 BAMs can be added too. ---
+P14_H3K36me3_rep1_GSM3084620	SRR6956518_GSM3084620_ChIP_GO_P14_H3K36me3_rep1_Mus_musculus_ChIP-Seq_R1_001_dedup.bam
+P14_H3K36me3_rep2_GSM3084621	SRR6956519_GSM3084621_ChIP_GO_P14_H3K36me3_rep2_Mus_musculus_ChIP-Seq_R1_001_dedup.bam
+FGO_H3K36me3_rep1_GSM3084622	SRR6956520_GSM3084622_ChIP_FGO_H3K36me3_rep1_Mus_musculus_ChIP-Seq_R1_001_dedup.bam
+FGO_H3K36me3_rep2_GSM3084623	SRR6956521_GSM3084623_ChIP_FGO_H3K36me3_rep2_Mus_musculus_ChIP-Seq_R1_001_dedup.bam
+# --- inputs (for the 'at least 1 read in input' bin filter) ---
+# input_GO_P10	<input BAM>
+# input_NSN_4w	<input BAM>

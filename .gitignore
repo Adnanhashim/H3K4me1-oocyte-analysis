@@ -1,0 +1,39 @@
+# ---- Personal / cluster-specific files (never push) ----
+*_local.slurm
+*_saga.sh
+*_local.sh
+.Renviron
+.env
+
+# ---- SLURM logs ----
+logs/*
+!logs/.gitkeep
+slurm-*.out
+
+# ---- Large data (deposited on GEO, not in git) and script output ----
+data/*
+!data/README.md
+figures/
+results/
+heatmaps/
+peaks/
+*.fastq
+*.fastq.gz
+*.fq.gz
+*.bam
+*.bai
+*.sam
+*.bw
+*.bigWig
+*.bedGraph
+*.bdg
+
+# ---- R / Python / OS clutter ----
+.Rhistory
+.RData
+.Rproj.user/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db

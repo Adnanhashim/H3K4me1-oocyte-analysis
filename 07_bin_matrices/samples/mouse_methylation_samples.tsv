@@ -1,0 +1,13 @@
+# Mouse DNA methylation BigWigs (build_methylation_matrix.sh).
+# Tab-separated: label <TAB> bigwig. Lines starting with # are ignored.
+# BigWigs in % (0-100) or fraction (0-1) are both fine: the script scales every
+# column to 0-1. GSM numbers from Supp. Table 1.
+label	bigwig
+MII_5mC	MII_merged_coverage_files_CpG.bw
+# P10 GO: GSM2690945 + GSM2690946 (Bismark coverage files merged with bismark_cov_to_bigwig.sh)
+P10_5mC_GSM2690945_46	P10_GO_GSM2690945_46_merged.bw
+# P12 / P15 GO: merged processed data (GSE72784)
+P12_5mC_GSE72784	GSE72784_D12.nodup.CpG.bed.mm10.meth.bw
+P15_5mC_GSE72784	GSE72784_D15.nodup.CpG.bed.mm10.meth.bw
+# FGO: GSM4832691-93 merged
+FGO_5mC_GSM4832691_92_93	FGO_GSM4832691_92_93_final.bw

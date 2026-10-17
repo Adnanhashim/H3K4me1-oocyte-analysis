@@ -1,0 +1,11 @@
+# Bar labels and order for plot_genome_coverage.R (Fig. 1c).
+# TAB-separated. 'sample' must match the sample column of genome_coverage.txt
+# (peak file name without .broadPeak).
+sample	label
+3-p10A-m1-300-13_S5_R1_001_nature_dahl_paramater_peaks	p10A Ooctyte
+5-p10B-m1-243_S5_R1_001_nature_dahl_paramater_peaks	p10B Ooctyte
+Esb4H3k4me1_Rep1_nature_dahl_paramater_peaks	Esb
+KidneyH3k4me1_Rep1_nature_dahl_paramater_peaks	Kidney
+LiverH3k4me1_Rep1_nature_dahl_paramater_peaks	Liver
+SmintH3k04me1_Rep2_nature_dahl_paramater_peaks	Small intestine
+TestisH3k04me1_Rep1_nature_dahl_paramater_peaks	Testis

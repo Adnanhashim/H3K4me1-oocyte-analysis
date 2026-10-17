@@ -1,0 +1,33 @@
+# Conda environment matching the software versions used on Saga HPC.
+# Create with:  conda env create -f environment.yml
+#               conda activate h3k4me1-oocyte
+name: h3k4me1-oocyte
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.9
+  - deeptools=3.5.0
+  - samtools=1.13
+  - htslib=1.12
+  - bowtie2=2.4.4
+  - bedtools=2.30.0
+  - bamtools=2.5.2
+  - subread=2.0.3
+  - trim-galore=0.6.7
+  - fastqc=0.11.9
+  - multiqc=1.11
+  # R (figure scripts are normally run locally in RStudio)
+  - r-base>=4.0
+  - r-ggplot2
+  - r-svglite
+  - r-hexbin
+  - r-gridextra
+  - r-pheatmap
+  - r-rcolorbrewer
+  - r-mixtools
+  - r-fbasics
+  - r-data.table
+  - bioconductor-chippeakanno
+  - bioconductor-genomicranges
+  - bioconductor-txdb.mmusculus.ucsc.mm10.knowngene
