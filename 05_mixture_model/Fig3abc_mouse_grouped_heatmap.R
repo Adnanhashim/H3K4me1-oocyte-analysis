@@ -64,12 +64,7 @@ meth_file <- file.path("data/matrices", paste0("mouse_", bin_size, "_MII_5mC.txt
 out_dir   <- "figures/Fig3"
 seed      <- 123
 
-# Thresholds used for the groups (top-5% normalized signal, mean of the two
-# replicates). 0.488 / 0.042 give the group sizes of the published Fig. 3a
-# (34.9 / 13.0 / 19.3 / 32.8 %); replace with the values of the original
-# analysis when available. NULL = use the mixture-model fit instead (ln scale;
-# the fit is reported in thresholds.csv either way, but it is not stable on
-# these data - normalmixEM can split off the low tail, e.g. 0.04 for H3K4me3).
+
 fixed_thresholds <- c(MII_H3K4me3 = 0.488, MII_H3K27me3 = 0.042)
 
 # ---------------------------- columns (matrix labels) ------------------------
